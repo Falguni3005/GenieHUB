@@ -1,3 +1,43 @@
+/*//Functions.
+function myfunction(x,y)
+{
+      return x*y;
+}
+console.log(myfunction(5,9));
+
+const x = function displaysum(a,b) { return a+b};  //Function Expression & Anonymous
+console.log(x(9,15));
+
+
+(function()
+{
+    console.log("Hiii There!!!");
+})();                                              //Function calling itself.
+
+let p = myfunction(81,6);              //Function used as values
+console.log(p);
+
+const z = (g,h=10) => g*h;            //Arrow Function with default parameter.
+console.log(z(9));
+
+
+function sumofnumbers(...nums)                //Rest parameters.
+{
+    let sum = 0;
+    for (let num of nums)
+    {
+        sum += num;
+    }
+    return sum;
+}
+console.log(sumofnumbers(12,4,6,7,56,32,19));*/
+
+
+
+
+
+
+
 //Get Method
 /*const song = {
     name : "Watermelon Sugar" , 
@@ -8,6 +48,10 @@ get WhoSangwhat() {
 }
 }
 console.log(song.WhoSangwhat);*/
+
+
+
+
 //Set Method
 /*const song = {
     name : "History",
@@ -20,6 +64,12 @@ console.log(song.WhoSangwhat);*/
 }
 song.SingerofSong = "One Direction";
 console.log(song.Singer)*/
+
+
+
+
+
+
 //Defining Object Property using Getter and Setter Methods.
 /*const obj = {counter : 0};
 Object.defineProperty(obj,"reset",{get : function() {this.counter=0;}});
@@ -33,6 +83,8 @@ obj.increment;
 obj.substract=5;
 obj.decrement;
 console.log(obj.counter);*/
+
+
 //Callback Function.
 /*const arr = [23,5,-8,0,84,-49,-15];
 const posnumber = removeneg(arr, (x) => x>=0);
@@ -49,9 +101,33 @@ function removeneg(numbers, mycallback)
     return arr1;
 }
 console.log(posnumber);*/
+
+
+
+
 //Asynchronous Function.
-setTimeout(function() { myfunc("Hiii there") }, 4000);
+/*setTimeout(function() { myfunc("Hiii there") }, 4000);
 function myfunc(value)
 {
     console.log(value);
-}
+}*/
+
+
+//Promise Function
+let myprom = new Promise(function(myresolve, myreject)
+{
+  let x = (y) => y%2==0;
+  if(x(7))
+  {
+    myresolve("Even:)");
+  }
+  else
+  {
+    myreject("Error:(");
+  }
+
+});
+myprom.then(
+function(value){console.log(value);},
+function(error){console.log(error);}
+);
