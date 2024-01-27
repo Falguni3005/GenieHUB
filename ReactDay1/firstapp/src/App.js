@@ -8,8 +8,8 @@ function App() {
     <div className="container my-3">
     <TextForm heading="Enter the Text to Analyze."/>
     </div>
-
    </>
+   
   );
 }
 export default App;

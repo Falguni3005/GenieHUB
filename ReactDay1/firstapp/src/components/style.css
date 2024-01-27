@@ -1,5 +1,18 @@
 .reset{
-    margin: 5px;
-    background-color: #0d6efd;
+    margin: 10px;
+    background-color: black;
     color: white;
-  }
+    height: 35px;
+    width: 75px;
+
+}
+.btnbtn-primary{
+    margin-top: 20px;
+   height: 35px;
+    width: 245px;
+    color: black;
+    background-color: plum;
+ }
+ h1{
+  color: gray;
+ }
