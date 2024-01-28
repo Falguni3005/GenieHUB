@@ -3,16 +3,16 @@
     background-color: black;
     color: white;
     height: 35px;
-    width: 75px;
+    width: 65px;
 
 }
 .btnbtn-primary{
     margin-top: 20px;
    height: 35px;
-    width: 245px;
-    color: black;
-    background-color: plum;
+    width: 175px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(38, 72, 221);
  }
  h1{
-  color: gray;
+  color: rgb(54, 54, 54);
  }
