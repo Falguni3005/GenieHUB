@@ -1,5 +1,4 @@
 .reset{
-    margin: 10px;
     background-color: black;
     color: white;
     height: 35px;
@@ -7,8 +6,8 @@
 
 }
 .btnbtn-primary{
-    margin-top: 20px;
-   height: 35px;
+    margin: 20px 8px;
+    height: 35px;
     width: 175px;
     color: rgb(255, 255, 255);
     background-color: rgb(38, 72, 221);
@@ -16,3 +15,12 @@
  h1{
   color: rgb(54, 54, 54);
  }
+ .textToSpeech{
+    margin-top: 20px;
+    margin-left: .7px;
+    height: 35px;
+    width: 175px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(38, 72, 221);
+ }
+ 

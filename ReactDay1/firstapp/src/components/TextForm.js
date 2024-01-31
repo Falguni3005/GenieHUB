@@ -24,6 +24,18 @@ export default function TextForm(props)
      let newText = text.toLowerCase();
      setText(newText);
   }
+  let now;
+  if(text==="")
+    now = 0;
+  else
+    now=text.split(" ").length;
+
+  const handleSpeech = () =>
+  {
+    const Speech= new SpeechSynthesisUtterance();
+    Speech.text= text;
+    window.speechSynthesis.speak(Speech);
+  }
   return (
     <>
     <div className="container">
@@ -33,11 +45,13 @@ export default function TextForm(props)
         <button className="btnbtn-primary" onClick={handleUpClick}>Convert to Uppercase</button>
         <button className="reset" onClick={handleReset}>Reset</button>
         <button className='btnbtn-primary' onClick={handleLpClick}>Convert to LowerCase</button>
+        <button className="textToSpeech" onClick={handleSpeech}>Convert to Speech</button>
         </div>
     </div>
     <div className="container" my-3>
       <h2>Text Summary</h2>
-      <p>{text.split(" ").length} words and {text.length} characters</p>
+      <p>{now} words and {text.length} characters</p>
+      <p>{0.008 * now} minutes to read</p>
     </div>
     </>
   )
